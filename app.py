@@ -27,8 +27,8 @@ OPENAI_API_BASE = os.getenv("OPENAI_API_BASE", "https://llmaas.govtext.gov.sg/ga
 MODEL_NAME = os.getenv("MODEL_NAME", "gpt-4o")
 LLM_TIMEOUT = int(os.getenv("LLM_TIMEOUT", "25"))
 LLM_MAX_RETRIES = int(os.getenv("LLM_MAX_RETRIES", "2"))
-PORT = int(os.getenv("PORT", "5000"))
-HOST = os.getenv("HOST", "0.0.0.0")
+PORT = int(os.getenv("PORT"))
+HOST = os.getenv("HOST")
 
 app = Flask(__name__)
 
