@@ -151,4 +151,4 @@ def analyze():
 # Run App
 # ---------------------------
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=PORT, debug=False, use_reloader=False)
+    app.run(host=HOST, port=PORT, debug=False, use_reloader=False)
