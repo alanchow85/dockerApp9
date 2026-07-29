@@ -1,0 +1,30 @@
+# Logs and databases
+*.log
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environments and credentials
+.env
+.env.local
+*.pem
+
+# Packages and build directories
+node_modules/
+dist/
+build/
+bin/
+obj/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+#ignore airbase file
+/airbase.json

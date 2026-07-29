@@ -1,0 +1,83 @@
+<html> 
+<head>
+<title>LLM Research Tool</title>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; background: linear-gradient(135deg,#e3f2fd,#f5f7fa); margin:0; padding:0; display:flex; align-items:center; justify-content:center; height:100vh;">
+
+<div style="background:white; width:600px; padding:40px; border-radius:12px; box-shadow:0 10px 25px rgba(0,0,0,0.15); text-align:center;">
+
+<h1 style="color:#2c3e50; font-size:32px; margin-bottom:10px;">
+Hello All 👋
+</h1>
+
+<p style="font-size:18px; color:#555; line-height:1.6; margin-bottom:30px;">
+This is a <b>new LLM model testing interface</b>.<br>
+It can perform <span style="color:#1976d2; font-weight:bold;">deep research</span> on any topic you enter below and provide some analysis. It might take a bit of loading time due to multiple agents working together.
+</p>
+
+<form action="/analyze" method="post" style="margin-top:20px;">
+
+<label for="input1" style="display:block; font-size:16px; margin-bottom:8px; color:#333;">
+Enter your first topic for research:
+</label>
+
+<input 
+name="input1"
+type="text"
+id="input1"
+placeholder="Type a topic..."
+required
+minlength="3"
+maxlength="100"
+pattern=".*\S.*"
+title="Please enter a valid topic (not empty)."
+style="width:80%; padding:12px; font-size:16px; border-radius:6px; border:1px solid #ccc; outline:none; margin-bottom:20px;"
+>
+<br>
+
+<label for="input2" style="display:block; font-size:16px; margin-bottom:8px; color:#333;">
+Enter your second topic for research:
+</label>
+
+<input 
+name="input2"
+type="text"
+id="input2"
+placeholder="Type a topic..."
+required
+minlength="3"
+maxlength="100"
+pattern=".*\S.*"
+title="Please enter a valid topic (not empty)."
+style="width:80%; padding:12px; font-size:16px; border-radius:6px; border:1px solid #ccc; outline:none; margin-bottom:20px;"
+>
+<br>
+
+<label for="password" style="display:block; font-size:16px; margin-bottom:8px; color:#333;">
+Enter access password:
+</label>
+
+<input
+name="password"
+type="password"
+id="password"
+placeholder="Enter password"
+required
+minlength="4"
+style="width:80%; padding:12px; font-size:16px; border-radius:6px; border:1px solid #ccc; outline:none; margin-bottom:20px;"
+>
+<br>
+
+<input 
+type="submit"
+value="Submit"
+style="background:#1976d2; color:white; border:none; padding:12px 28px; font-size:16px; border-radius:6px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.15); transition:0.3s;"
+>
+
+</form>
+
+</div>
+
+</body>
+</html>
